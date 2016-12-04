@@ -1,0 +1,107 @@
+@font-face {
+  font-family: pablo;
+  src: url(pablo.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  font-size: 1.1em;
+}
+
+.landingwrapper {
+  height: 100vh;
+}
+
+.bgimgcontainer {
+  height: 100vh;
+  background-image: url(bgimg9.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+nav {
+  position: absolute;
+  top: 5vh;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 2em;
+  padding: 0 1em;
+}
+
+li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+li a:hover {
+  opacity: 0.7;
+}
+
+.aboutwrapper {
+  height: 100vh
+}
+
+p {
+  color: #ffffff;
+}
+
+@keyframes strokedraw {
+  90% {
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+    fill-opacity: 0;
+  }
+  100% {
+    stroke-width: 0;
+    fill-opacity: 1;
+  }
+}
+
+.stroke1 {
+  stroke-dasharray: 586 588;
+  stroke-dashoffset: 587;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  animation: strokedraw 6000ms ease-in-out 0ms forwards;
+}
+
+.stroke2 {
+  stroke-dasharray: 558 560;
+  stroke-dashoffset: 559;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  animation: strokedraw 6000ms ease-in-out 0ms forwards;
+}
+
+.stroke3 {
+  stroke-dasharray: 815 817;
+  stroke-dashoffset: 816;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2px;
+  animation: strokedraw 6000ms ease-in-out 0ms forwards;
+}
+
+.fill1, .fill2, .fill3 {
+  fill-opacity: 0;
+  fill: #ffffff;
+  animation: strokedraw 6000ms forwards;
+}
